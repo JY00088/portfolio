@@ -114,7 +114,7 @@ const Work = () => {
                         <button
                           onClick={() =>
                             window.open(
-                              'https://web-man-108dypx2ale8404ww.sel3.cloudtype.app/',
+                              'https://jy00088.github.io/man/',
                               '_blank'
                             )
                           }
@@ -213,7 +213,7 @@ const Work = () => {
                         <button
                           onClick={() =>
                             window.open(
-                              'https://web-sunset-108dypx2ale8404ww.sel3.cloudtype.app/',
+                              'https://weatherlook.github.io/WeatherLook/',
                               '_blank'
                             )
                           }
