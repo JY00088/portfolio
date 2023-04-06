@@ -1,0 +1,506 @@
+@import "setting.css";
+.w {
+  background-color: #F4F5F7;
+  padding-bottom: 20px;
+  padding-top: 15px;
+}
+.w .logow {
+  width: 35px;
+  position: relative;
+  top: 18px;
+  left: 74px;
+  display: block;
+}
+.w nav {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 30px;
+  font-size: 20px;
+  gap: 25px;
+  margin-right: 40px;
+}
+.w nav a {
+  color: black !important;
+  font-family: "the01";
+}
+
+.aboutmain {
+  background-color: #F4F5F7;
+  color: black;
+}
+.aboutmain .section11 {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+}
+.aboutmain .section11 .section11_1 {
+  width: 90%;
+  height: 680px;
+  border: 3px solid black;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+.aboutmain .section11 .section11_1 .linebox {
+  display: flex;
+  height: 100%;
+}
+.aboutmain .section11 .section11_1 .linebox .left {
+  width: 70%;
+  height: 100%;
+}
+.aboutmain .section11 .section11_1 .linebox .left .above {
+  height: 40%;
+  display: flex;
+  border-bottom: 3px solid black;
+}
+.aboutmain .section11 .section11_1 .linebox .left .above .firstbox {
+  font-family: "the01";
+  width: 65%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.aboutmain .section11 .section11_1 .linebox .left .above .firstbox p {
+  font-family: "the02";
+  font-size: 25px;
+}
+.aboutmain .section11 .section11_1 .linebox .left .above .firstbox h2 {
+  font-size: 75px;
+}
+.aboutmain .section11 .section11_1 .linebox .left .above .firstbox h3 {
+  margin-top: 50px;
+  font-family: "the02";
+  font-size: 30px;
+}
+.aboutmain .section11 .section11_1 .linebox .left .above .blank01 {
+  border-right: 3px solid black;
+}
+.aboutmain .section11 .section11_1 .linebox .left .above .secondbox {
+  position: relative;
+}
+.aboutmain .section11 .section11_1 .linebox .left .above .secondbox img {
+  width: 230px;
+  position: absolute;
+  bottom: 0;
+}
+.aboutmain .section11 .section11_1 .linebox .left .under {
+  display: flex;
+  height: 60%;
+}
+.aboutmain .section11 .section11_1 .linebox .left .under .mini_title {
+  background-color: black;
+  color: white;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "the01";
+  font-size: 30px;
+}
+.aboutmain .section11 .section11_1 .linebox .left .under .pbox {
+  font-family: "the02";
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 50px;
+  font-size: 20px;
+}
+.aboutmain .section11 .section11_1 .linebox .right {
+  width: 30%;
+  border-left: 3px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 30px 30px;
+}
+.aboutmain .section11 .section11_1 .linebox .right .list_title h2 {
+  font-size: 50px;
+  font-family: "the01";
+}
+.aboutmain .section11 .section11_1 .linebox .right .list_content01 {
+  font-size: 20px;
+}
+.aboutmain .section11 .section11_1 .linebox .right .list_content01 h3 {
+  font-family: "the01";
+  padding-bottom: 15px;
+  position: relative;
+  z-index: 1;
+}
+.aboutmain .section11 .section11_1 .linebox .right .list_content01 h3::after {
+  content: "";
+  background-color: rgba(103, 245, 255, 0.4862745098);
+  display: block;
+  width: 240px;
+  height: 20px;
+  transform: translate(-8px, -12px);
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  -webkit-animation: highlighter01 1.5s forwards;
+          animation: highlighter01 1.5s forwards;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+@-webkit-keyframes highlighter01 {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes highlighter01 {
+  to {
+    opacity: 1;
+  }
+}
+.aboutmain .section11 .section11_1 .linebox .right .list_content01 div p {
+  font-family: "the02";
+  padding-bottom: 5px;
+}
+.aboutmain .section11 .section11_1 .linebox .right .list_content02 {
+  font-size: 20px;
+}
+.aboutmain .section11 .section11_1 .linebox .right .list_content02 h3 {
+  font-family: "the01";
+  padding-bottom: 15px;
+  position: relative;
+  z-index: 1;
+}
+.aboutmain .section11 .section11_1 .linebox .right .list_content02 h3::after {
+  content: "";
+  background-color: rgba(191, 255, 43, 0.4862745098);
+  display: block;
+  width: 330px;
+  height: 20px;
+  transform: translate(-8px, -12px);
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  -webkit-animation: highlighter02 1.5s forwards;
+          animation: highlighter02 1.5s forwards;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+@-webkit-keyframes highlighter02 {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes highlighter02 {
+  to {
+    opacity: 1;
+  }
+}
+.aboutmain .section11 .section11_1 .linebox .right .list_content02 div p {
+  font-family: "the02";
+  padding-bottom: 5px;
+}
+.aboutmain .section12 {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.aboutmain .section12 .rotatebox {
+  white-space: nowrap;
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  font-family: "the02";
+  font-size: 20px;
+}
+.aboutmain .section12 .rotatebox .rotate01 {
+  transform: translate(19px, -190px) rotate(5deg);
+  background-color: #FF3797;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  -webkit-animation: ro01 1s linear infinite alternate;
+          animation: ro01 1s linear infinite alternate;
+}
+@-webkit-keyframes ro01 {}
+@keyframes ro01 {}
+.aboutmain .section12 .rotatebox .rotate02 {
+  transform: translate(19px, -132px) rotate(-8deg);
+  background-color: #5800FF;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+.aboutmain .section12 .rotatebox .rotate03 {
+  transform: translate(19px, 2px) rotate(8deg);
+  background-color: #EDFD03;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+.aboutmain .section12 .rotatebox .rotate04 {
+  transform: translate(19px, 97px) rotate(-3deg);
+  background-color: #00C386;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+.aboutmain .section12 img {
+  width: 10%;
+  position: absolute;
+  left: 240px;
+  top: 230px;
+}
+.aboutmain .section13 {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+}
+.aboutmain .section13 .big_title {
+  margin: 30px 0 0 50px;
+}
+.aboutmain .section13 .big_title .logoe {
+  width: 30px;
+}
+.aboutmain .section13 .big_title h1 {
+  font-size: 200px;
+  font-weight: 900;
+}
+.aboutmain .section13 .sm_title {
+  margin: 80px 80px 0 80px;
+}
+.aboutmain .section13 .sm_title h2 {
+  font-family: "the02";
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.aboutmain .section13 .sm_title .paragraph01 {
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.aboutmain .section13 .sm_title .paragraph01 .HTML {
+  font-family: "the02";
+  position: relative;
+}
+.aboutmain .section13 .sm_title .paragraph01 .HTML .number_01 {
+  font-size: 220px;
+  font-weight: 900;
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;
+  color: #F4F5F7;
+}
+.aboutmain .section13 .sm_title .paragraph01 .HTML .number_01:hover {
+  text-shadow: none;
+  color: #FF9900;
+}
+.aboutmain .section13 .sm_title .paragraph01 .HTML .text_01 {
+  background-color: #F4F5F7;
+  font-size: 100px;
+  font-weight: 900;
+  position: relative;
+  top: -74px;
+  width: 280px;
+  left: -22px;
+  text-align: center;
+}
+.aboutmain .section13 .sm_title .paragraph01 .HTML ul {
+  position: relative;
+  top: -31px;
+  gap: 10px;
+  display: inline-grid;
+}
+.aboutmain .section13 .sm_title .paragraph01 .HTML ul li {
+  font-size: 20px;
+}
+.aboutmain .section13 .sm_title .paragraph01 .CSS {
+  font-family: "the02";
+  position: relative;
+}
+.aboutmain .section13 .sm_title .paragraph01 .CSS .number_02 {
+  font-size: 220px;
+  font-weight: 900;
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;
+  color: #F4F5F7;
+}
+.aboutmain .section13 .sm_title .paragraph01 .CSS .number_02:hover {
+  text-shadow: none;
+  color: #438EFF;
+}
+.aboutmain .section13 .sm_title .paragraph01 .CSS .text_02 {
+  background-color: #F4F5F7;
+  font-size: 100px;
+  font-weight: 900;
+  position: relative;
+  top: -74px;
+  width: 280px;
+  left: -22px;
+  text-align: center;
+}
+.aboutmain .section13 .sm_title .paragraph01 .CSS ul {
+  position: relative;
+  top: -31px;
+  gap: 10px;
+  display: inline-grid;
+}
+.aboutmain .section13 .sm_title .paragraph01 .CSS ul li {
+  font-size: 20px;
+}
+.aboutmain .section13 .sm_title .paragraph01 .JS {
+  font-family: "the02";
+  position: relative;
+}
+.aboutmain .section13 .sm_title .paragraph01 .JS .number_03 {
+  font-size: 220px;
+  font-weight: 900;
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;
+  color: #F4F5F7;
+}
+.aboutmain .section13 .sm_title .paragraph01 .JS .number_03:hover {
+  text-shadow: none;
+  color: #FBDB34;
+}
+.aboutmain .section13 .sm_title .paragraph01 .JS .text_03 {
+  background-color: #F4F5F7;
+  font-size: 100px;
+  font-weight: 900;
+  position: relative;
+  top: -74px;
+  width: 280px;
+  left: -22px;
+  text-align: center;
+}
+.aboutmain .section13 .sm_title .paragraph01 .JS ul {
+  position: relative;
+  top: -31px;
+  gap: 10px;
+  display: inline-grid;
+}
+.aboutmain .section13 .sm_title .paragraph01 .JS ul li {
+  font-size: 20px;
+}
+.aboutmain .section13 .sm_title .paragraph01 .REACT {
+  font-family: "the02";
+  position: relative;
+}
+.aboutmain .section13 .sm_title .paragraph01 .REACT .number_04 {
+  font-size: 220px;
+  font-weight: 900;
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;
+  color: #F4F5F7;
+}
+.aboutmain .section13 .sm_title .paragraph01 .REACT .number_04:hover {
+  text-shadow: none;
+  color: #00F0FF;
+}
+.aboutmain .section13 .sm_title .paragraph01 .REACT .text_04 {
+  background-color: #F4F5F7;
+  font-size: 100px;
+  font-weight: 900;
+  position: relative;
+  top: -74px;
+  width: 280px;
+  left: -22px;
+  text-align: center;
+}
+.aboutmain .section13 .sm_title .paragraph01 .REACT ul {
+  position: relative;
+  top: -31px;
+  gap: 10px;
+  display: inline-grid;
+}
+.aboutmain .section13 .sm_title .paragraph01 .REACT ul li {
+  font-size: 20px;
+}
+.aboutmain .section13 .se_title {
+  margin: 80px 80px 0 80px;
+}
+.aboutmain .section13 .se_title h2 {
+  font-family: "the02";
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.aboutmain .section13 .se_title .paragraph02 {
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  width: 52%;
+}
+.aboutmain .section13 .se_title .paragraph02 .DEPLOY {
+  font-family: "the02";
+  position: relative;
+}
+.aboutmain .section13 .se_title .paragraph02 .DEPLOY .number_05 {
+  font-size: 220px;
+  font-weight: 900;
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;
+  color: #F4F5F7;
+}
+.aboutmain .section13 .se_title .paragraph02 .DEPLOY .number_05:hover {
+  text-shadow: none;
+  color: #B200DE;
+}
+.aboutmain .section13 .se_title .paragraph02 .DEPLOY .text_05 {
+  background-color: #F4F5F7;
+  font-size: 100px;
+  font-weight: 900;
+  position: relative;
+  top: -74px;
+  width: 280px;
+  left: -22px;
+  text-align: center;
+}
+.aboutmain .section13 .se_title .paragraph02 .DEPLOY ul {
+  position: relative;
+  top: -31px;
+  gap: 10px;
+  display: inline-grid;
+}
+.aboutmain .section13 .se_title .paragraph02 .DEPLOY ul li {
+  font-size: 20px;
+}
+.aboutmain .section13 .se_title .paragraph02 .SOFT {
+  font-family: "the02";
+  position: relative;
+}
+.aboutmain .section13 .se_title .paragraph02 .SOFT .number_06 {
+  font-size: 220px;
+  font-weight: 900;
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;
+  color: #F4F5F7;
+}
+.aboutmain .section13 .se_title .paragraph02 .SOFT .number_06:hover {
+  text-shadow: none;
+  color: #FF429D;
+}
+.aboutmain .section13 .se_title .paragraph02 .SOFT .text_06 {
+  background-color: #F4F5F7;
+  font-size: 100px;
+  font-weight: 900;
+  position: relative;
+  top: -74px;
+  width: 418px;
+  left: -86px;
+  text-align: center;
+}
+.aboutmain .section13 .se_title .paragraph02 .SOFT ul {
+  position: relative;
+  top: -31px;
+  gap: 10px;
+  display: inline-grid;
+}
+.aboutmain .section13 .se_title .paragraph02 .SOFT ul li {
+  font-size: 20px;
+}
+.aboutmain .section13 .section02a .paragraphbox {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  bottom: 140px;
+}
+.aboutmain .section13 .section02a .paragraphbox .memoji01 {
+  width: 200px;
+}
+.aboutmain .section13 .section02a .paragraphbox .noi {
+  width: 700px;
+  height: 100px;
+}/*# sourceMappingURL=About.css.map */
