@@ -1,7 +1,7 @@
 import React from 'react';
 import '../css/Work.scss';
 import { Link } from 'react-router-dom';
-import { ReactComponent as Logo } from '../css/imgs/logo_copy_w.svg';
+import { ReactComponent as Logo } from '../css/imgs/logo_w_title.svg';
 
 // scroll 이벤트
 import Scro from './Scro';
