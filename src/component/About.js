@@ -1,28 +1,14 @@
 import React from 'react';
 import '../css/About.scss';
 import { Link } from 'react-router-dom';
-import { ReactComponent as Logo2 } from '../css/imgs/logo_b_title.svg';
+import { ReactComponent as Logo2 } from '../css/imgs/logo_w_title.svg';
 
 // scroll 이벤트
-import Scro from './Scro';
 import Ani from './Ani';
 
 const About = () => {
   return (
     <div className="bodyabout">
-      <header className="aboutheader">
-        <div className="lobox">
-          <Logo2 className="logow" />
-        </div>
-
-        <nav>
-          <Link to="/">work</Link>
-          <Link onClick={() => window.open('../이지영_이력서.pdf', '_blank')}>
-            reume
-          </Link>
-          <Link to="/about">about</Link>
-        </nav>
-      </header>
       <main className="aboutmain">
         {/* 첫번째 단락 */}
         <article className="section11">
@@ -39,7 +25,7 @@ const About = () => {
                   </p>
                   <div className="minititle">
                     <h3>2023</h3>
-                    <img src="../img/mini_b.svg" />
+                    <img src="../img/mini_w.svg" />
                     <h3>RESUME</h3>
                   </div>
                   <div className="writing11">
@@ -86,28 +72,31 @@ const About = () => {
         </article>
 
         {/* 두번째 단락 */}
-        <section className="section122">
-          <div className="anibox">{<Ani />}</div>
-          <div className="aniflo">
-            <div className="ani01"></div>
-            <div className="ani02"></div>
-            <div className="ani03"></div>
-            <div className="ani04"></div>
-            <div className="ani05"></div>
-            <div className="ani06"></div>
-            <div className="ani07"></div>
-            <img className="ani08" src="../img/mini_b.svg" />
+        <article className="section12">
+          <div className="lefttext">
+            <h2>Certification</h2>
+            <img />
+            <h4>National & National technical Qualification </h4>
           </div>
-        </section>
-
+          <div className="oneblue">
+            <h2></h2>
+            <div>
+              <h3></h3>
+              <img />
+            </div>
+          </div>
+          <div class="horizontal-scroll-wrapper  rectangles">
+            <div>item 1</div>
+            <div>item 2</div>
+            <div>item 3</div>
+            <div>item 4</div>
+            <div>item 5</div>
+            <div>item 6</div>
+            <div>item 7</div>
+            <div>item 8</div>
+          </div>
+        </article>
         {/* 세번째 단락 */}
-        {/* <section className="section12">
-          <div className="rotatebox">{<Scro />}</div>
-
-          <img className="ponimg01" src="../img/p01.png" />
-          <img className="ponimg02" src="../img/p02.png" />
-        </section> */}
-        {/* 네번째 단락 */}
         <section className="section13">
           {/* 스킬 */}
           <article className="big_title">
