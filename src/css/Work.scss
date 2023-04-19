@@ -505,85 +505,51 @@ body {
     body {
         overflow-x: hidden;
         overflow-y: auto;
+        background-color: black;
     }
 
-    .workheader {
-        padding: 5px 0;
-        background-color: rgba(0, 0, 0, 0.842);
-        overflow-x: hidden;
-
-        .lobox {
-            width: 40px;
-            height: 40px;
-            border: 2px solid white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-
-            position: relative;
-            top: 10px;
-            left: 20px;
-
-            .logow {
-                width: 25px;
-                display: block;
-            }
-        }
-
-
-        nav {
-            display: flex;
-            justify-content: flex-end;
-            padding-right: 75px;
-            font-size: 20px;
-            gap: 25px;
-            margin-right: 40px;
-            transform: translate(87px, -15px);
-
-            a {
-                color: white;
-                font-family: 'the01';
-
-            }
-        }
-
-        /* .blank_space {
-            margin: 10px 65px;
-            border-bottom: 2px solid white;
-            text-align: center;
-        } */
+    .page-transition {
+        transition: transform 1s ease-in-out;
+        transform: translateX(-100%);
     }
+
+    .bodywork {
+        cursor: url("../css/imgs/mini_w.svg"), auto;
+        background-color: black;
+        //background-image: url('../../public/img/image37.png');
+        //background-attachment: fixed;
+        //background-repeat: no-repeat
+    }
+
 
     .workmain {
         background-color: rgba(0, 0, 0, 0.842);
         color: white;
-
+        z-index: 0;
+        position: relative;
 
         .section01 {
-            margin: 0 10px;
+            overflow: hidden;
+            margin: 0 24px;
             height: 100vh;
             display: flex;
             flex-wrap: wrap;
-            overflow-x: hidden;
-            width: 97.3%;
-            position: relative;
+
 
             .section01a {
                 width: 100%;
-                margin: 0 10px;
-                margin-top: 30px;
+                margin: 0;
+                margin-top: 75px;
                 height: 35%;
+                z-index: 1;
 
                 ul {
                     justify-content: space-between;
                     display: flex;
                     width: 100%;
-                    flex-direction: column;
 
                     .paragraph01 {
-                        font-size: 28px;
+                        font-size: 33px;
                         line-height: 2;
 
                         strong {
@@ -625,13 +591,12 @@ body {
                     }
 
                     .paragraph03 {
+
                         font-size: 30px;
                         line-height: 1.3;
                         width: 15%;
-                        display: flex;
+                        display: none;
                         flex-direction: column;
-
-                        transform: translate(47px, 77px);
 
                         .stbox {
                             display: flex;
@@ -665,7 +630,32 @@ body {
                         p {
                             font-size: 25px;
                             font-family: "the02";
-                            transform: translateX(-47px);
+                            transform: translateX(3px);
+                        }
+                    }
+                }
+            }
+
+            .section02z {
+                position: absolute;
+                transform: rotate(-6deg) translateY(22rem);
+
+                h1 {
+                    font-size: 100px;
+                    font-weight: bold;
+                    color: rgb(54, 54, 54);
+                    white-space: nowrap;
+                    position: relative;
+                    transform: translateX(-51%);
+                    animation: move 5s linear infinite;
+
+                    @keyframes move {
+                        0% {
+                            transform: translateX(-51%);
+                        }
+
+                        100% {
+                            transform: translateX(0%);
                         }
                     }
                 }
@@ -674,15 +664,15 @@ body {
             .section02a {
                 display: flex;
                 width: 100%;
-                justify-content: space-between;
-
+                flex-direction: column;
 
                 img {
                     width: 90px;
                     height: 90px;
                     color: white;
                     position: relative;
-                    bottom: -125px;
+                    bottom: -10rem;
+                    left: 38%;
                     animation: arr2 1.5s ease-in-out infinite;
 
                     @keyframes arr2 {
@@ -697,106 +687,316 @@ body {
                     }
                 }
 
-                h1 {
-                    font-size: 100px;
-                    font-weight: bold;
 
+                .probox {
+                    width: 100%;
 
-                    &::before {
-                        content: "";
-                        width: 500px;
-                        height: 200px;
-                        border: 3px solid white;
-                        opacity: 50%;
-                        border-radius: 50%;
-                        display: block;
-                        position: absolute;
-                        top: 520px;
-                        right: -10rem;
-                        transform: rotate(7deg);
-                        animation: hh2 5s ease-in-out infinite;
-
-                        @keyframes hh2 {
-                            0% {
-                                transform: rotate(7deg);
-                            }
-
-                            50% {
-                                transform: rotate(3deg);
-                            }
-
-                            100% {
-                                transform: rotate(7deg);
-                            }
-                        }
-                    }
-
-                    &::after {
-                        content: "";
-                        width: 500px;
-                        height: 200px;
+                    .hwbox {
+                        width: 180px;
+                        height: 50px;
                         border: 2px solid white;
-                        opacity: 70%;
-                        border-radius: 50%;
-                        display: block;
-                        position: absolute;
-                        top: 520px;
-                        right: -10rem;
+                        border-radius: 50px;
+                        margin: 0 auto;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
 
+                        h2 {
+                            font-family: 'the01';
+                            font-size: 30px;
 
+                            // &::before {
+                            //     content: "";
+                            //     display: block;
+                            //     
+                            //     position: absolute;
+                            //     left: 43%;
+                            //     bottom: 80px;
+                            // }
+                        }
                     }
 
-                }
-
-                .paragraphbox {
-
-                    .memoji01 {
-                        width: 20%;
-                        position: relative;
-                        bottom: -2px;
-                        left: -2.7%;
-                    }
-
-                    .noi {
-                        width: 100%;
-                    }
                 }
 
             }
 
-            .float {
-                position: relative;
 
-                .secfloat01 {
-                    position: absolute;
-                    width: 40px;
-                    height: 40px;
-                    border-radius: 50%;
-                    background-image: linear-gradient(to top, #ffffff79 0%, rgba(0, 0, 0, 0.884) 100%);
-                    left: -13.5rem;
-                    top: -14.6rem;
-                    animation: sec01 3s infinite alternate ease-in-out;
-
-                    @keyframes sec01 {
-                        0% {
-                            opacity: 0;
-                        }
-
-                        50% {
-                            opacity: 0.5;
-                        }
-
-                        100% {
-                            opacity: 1;
-                        }
-                    }
-                }
-
-                .secfloat02 {}
-            }
         }
 
+        .section02 {
+            overflow: hidden;
+            height: 100vh;
 
+            article {
+                .titlepro {
+                    position: relative;
+                    top: 5rem;
+                    left: 7rem;
+
+
+
+                    H2 {
+                        font-size: 40px;
+                        font-family: 'the01';
+                    }
+                }
+
+                .linkbox {
+                    position: relative;
+
+                    a {
+                        img {
+                            width: 70%;
+                        }
+                    }
+
+                    .weaderhover {
+                        &:hover {
+                            .boxtex04 {
+                                opacity: 1;
+                            }
+
+                            .mainicon04 {
+                                animation: icon04 1.5s ease-in-out infinite;
+                            }
+
+                            @keyframes icon04 {
+                                0% {
+
+                                    transform: translateY(0%) rotate(22deg);
+                                }
+
+                                50% {
+                                    transform: translateY(30%) rotate(22deg);
+                                }
+                            }
+
+
+                        }
+
+                        .mainicon04 {
+                            position: absolute;
+                            left: 4rem;
+                            top: 9rem;
+                            transform: rotate(22deg);
+                            z-index: 1;
+                        }
+
+                        .boxtex04 {
+                            opacity: 0;
+                            position: absolute;
+                            transform: rotate(-6deg) translateY(-28rem);
+
+                            .text04 {
+                                font-size: 250px;
+                                font-weight: bold;
+                                color: #DE98AA;
+                                white-space: nowrap;
+                                position: relative;
+                                transform: translateX(-51%);
+                                animation: temove04 12s linear infinite;
+                            }
+
+                            @keyframes temove04 {
+                                0% {
+                                    transform: translateX(-51%);
+                                }
+
+                                100% {
+                                    transform: translateX(0%);
+                                }
+                            }
+                        }
+                    }
+
+                    .splahover {
+                        &:hover {
+                            .boxtex03 {
+                                opacity: 1;
+                            }
+
+                            .mainicon03 {
+                                animation: icon03 1.5s ease-in-out infinite;
+                            }
+
+                            @keyframes icon03 {
+                                0% {
+
+                                    transform: translate(0%) rotate(-13deg);
+                                }
+
+                                50% {
+                                    transform: translate(30%, -10%) rotate(-13deg);
+                                }
+                            }
+
+
+                        }
+
+                        .mainicon03 {
+                            position: absolute;
+                            right: -3.6rem;
+                            top: 19rem;
+                            transform: rotate(-13deg);
+                            z-index: 1;
+
+                        }
+
+                        .boxtex03 {
+                            opacity: 0;
+                            position: absolute;
+                            transform: rotate(-6deg) translateY(-6rem);
+
+                            .text03 {
+                                font-size: 250px;
+                                font-weight: bold;
+                                color: #944343;
+                                white-space: nowrap;
+                                position: relative;
+                                transform: translateX(-51%);
+                                animation: temove03 10s linear infinite;
+                            }
+
+                            @keyframes temove03 {
+                                0% {
+                                    transform: translateX(-51%);
+                                }
+
+                                100% {
+                                    transform: translateX(0%);
+                                }
+                            }
+                        }
+                    }
+
+
+                    .manhover {
+                        &:hover {
+                            .boxtex02 {
+                                opacity: 1;
+                            }
+
+                            .mainicon02 {
+                                animation: icon02 1.5s ease-in-out infinite;
+                            }
+
+
+
+                            @keyframes icon02 {
+                                0% {
+
+                                    transform: translate(0%) rotate(22deg);
+                                }
+
+                                50% {
+                                    transform: translate(10%, 30%) rotate(22deg);
+                                }
+
+                            }
+
+
+                        }
+
+                        .mainicon02 {
+                            position: absolute;
+                            left: 2rem;
+                            top: 29rem;
+                            transform: rotate(22deg);
+                            z-index: 1;
+
+                        }
+
+                        .boxtex02 {
+                            opacity: 0;
+                            position: absolute;
+                            transform: rotate(-6deg) translateY(-3rem);
+
+                            .text02 {
+                                font-size: 250px;
+                                font-weight: bold;
+                                color: #24743F;
+                                white-space: nowrap;
+                                position: relative;
+                                transform: translateX(-51%);
+                                animation: temove02 12s linear infinite;
+                            }
+
+                            @keyframes temove02 {
+                                0% {
+                                    transform: translateX(-51%);
+                                }
+
+                                100% {
+                                    transform: translateX(0%);
+                                }
+                            }
+                        }
+
+                    }
+
+                    .suehover {
+                        &:hover {
+                            .boxtex01 {
+                                opacity: 1;
+                            }
+
+                            .mainicon01 {
+                                animation: icon01 1.5s ease-in-out infinite;
+                            }
+
+                            @keyframes icon01 {
+                                0% {
+
+                                    transform: translate(0%) rotate(-13deg);
+                                }
+
+                                50% {
+                                    transform: translate(30%, -10%) rotate(-13deg);
+                                }
+                            }
+
+
+                        }
+
+                        .mainicon01 {
+                            position: absolute;
+                            right: 0rem;
+                            top: 37rem;
+                            transform: rotate(8deg);
+                            z-index: 1;
+                        }
+
+                        .boxtex01 {
+                            opacity: 0;
+                            position: absolute;
+                            transform: rotate(-6deg) translateY(13rem);
+
+                            .text01 {
+                                font-size: 250px;
+                                font-weight: bold;
+                                color: #DCB244;
+                                white-space: nowrap;
+                                position: relative;
+                                transform: translateX(-51%);
+                                animation: temove01 10s linear infinite;
+                            }
+
+                            @keyframes temove01 {
+                                0% {
+                                    transform: translateX(-51%);
+                                }
+
+                                100% {
+                                    transform: translateX(0%);
+                                }
+                            }
+                        }
+
+                    }
+
+                }
+            }
+        }
 
     }
 }

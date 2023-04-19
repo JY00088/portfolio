@@ -458,73 +458,43 @@ body {
   body {
     overflow-x: hidden;
     overflow-y: auto;
+    background-color: black;
   }
-  .workheader {
-    padding: 5px 0;
-    background-color: rgba(0, 0, 0, 0.842);
-    overflow-x: hidden;
-    /* .blank_space {
-        margin: 10px 65px;
-        border-bottom: 2px solid white;
-        text-align: center;
-    } */
+  .page-transition {
+    transition: transform 1s ease-in-out;
+    transform: translateX(-100%);
   }
-  .workheader .lobox {
-    width: 40px;
-    height: 40px;
-    border: 2px solid white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    top: 10px;
-    left: 20px;
-  }
-  .workheader .lobox .logow {
-    width: 25px;
-    display: block;
-  }
-  .workheader nav {
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 75px;
-    font-size: 20px;
-    gap: 25px;
-    margin-right: 40px;
-    transform: translate(87px, -15px);
-  }
-  .workheader nav a {
-    color: white;
-    font-family: "the01";
+  .bodywork {
+    cursor: url("../css/imgs/mini_w.svg"), auto;
+    background-color: black;
   }
   .workmain {
     background-color: rgba(0, 0, 0, 0.842);
     color: white;
+    z-index: 0;
+    position: relative;
   }
   .workmain .section01 {
-    margin: 0 10px;
+    overflow: hidden;
+    margin: 0 24px;
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
-    overflow-x: hidden;
-    width: 97.3%;
-    position: relative;
   }
   .workmain .section01 .section01a {
     width: 100%;
-    margin: 0 10px;
-    margin-top: 30px;
+    margin: 0;
+    margin-top: 75px;
     height: 35%;
+    z-index: 1;
   }
   .workmain .section01 .section01a ul {
     justify-content: space-between;
     display: flex;
     width: 100%;
-    flex-direction: column;
   }
   .workmain .section01 .section01a ul .paragraph01 {
-    font-size: 28px;
+    font-size: 33px;
     line-height: 2;
   }
   .workmain .section01 .section01a ul .paragraph01 strong {
@@ -565,9 +535,8 @@ body {
     font-size: 30px;
     line-height: 1.3;
     width: 15%;
-    display: flex;
+    display: none;
     flex-direction: column;
-    transform: translate(47px, 77px);
   }
   .workmain .section01 .section01a ul .paragraph03 .stbox {
     display: flex;
@@ -593,19 +562,50 @@ body {
   .workmain .section01 .section01a ul .paragraph03 p {
     font-size: 25px;
     font-family: "the02";
-    transform: translateX(-47px);
+    transform: translateX(3px);
+  }
+  .workmain .section01 .section02z {
+    position: absolute;
+    transform: rotate(-6deg) translateY(22rem);
+  }
+  .workmain .section01 .section02z h1 {
+    font-size: 100px;
+    font-weight: bold;
+    color: rgb(54, 54, 54);
+    white-space: nowrap;
+    position: relative;
+    transform: translateX(-51%);
+    -webkit-animation: move 5s linear infinite;
+            animation: move 5s linear infinite;
+  }
+  @-webkit-keyframes move {
+    0% {
+      transform: translateX(-51%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  @keyframes move {
+    0% {
+      transform: translateX(-51%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
   }
   .workmain .section01 .section02a {
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    flex-direction: column;
   }
   .workmain .section01 .section02a img {
     width: 90px;
     height: 90px;
     color: white;
     position: relative;
-    bottom: -125px;
+    bottom: -10rem;
+    left: 38%;
     -webkit-animation: arr2 1.5s ease-in-out infinite;
             animation: arr2 1.5s ease-in-out infinite;
   }
@@ -625,102 +625,284 @@ body {
       transform: translateY(30%);
     }
   }
-  .workmain .section01 .section02a h1 {
-    font-size: 100px;
-    font-weight: bold;
-  }
-  .workmain .section01 .section02a h1::before {
-    content: "";
-    width: 500px;
-    height: 200px;
-    border: 3px solid white;
-    opacity: 50%;
-    border-radius: 50%;
-    display: block;
-    position: absolute;
-    top: 520px;
-    right: -10rem;
-    transform: rotate(7deg);
-    -webkit-animation: hh2 5s ease-in-out infinite;
-            animation: hh2 5s ease-in-out infinite;
-  }
-  @-webkit-keyframes hh2 {
-    0% {
-      transform: rotate(7deg);
-    }
-    50% {
-      transform: rotate(3deg);
-    }
-    100% {
-      transform: rotate(7deg);
-    }
-  }
-  @keyframes hh2 {
-    0% {
-      transform: rotate(7deg);
-    }
-    50% {
-      transform: rotate(3deg);
-    }
-    100% {
-      transform: rotate(7deg);
-    }
-  }
-  .workmain .section01 .section02a h1::after {
-    content: "";
-    width: 500px;
-    height: 200px;
-    border: 2px solid white;
-    opacity: 70%;
-    border-radius: 50%;
-    display: block;
-    position: absolute;
-    top: 520px;
-    right: -10rem;
-  }
-  .workmain .section01 .section02a .paragraphbox .memoji01 {
-    width: 20%;
-    position: relative;
-    bottom: -2px;
-    left: -2.7%;
-  }
-  .workmain .section01 .section02a .paragraphbox .noi {
+  .workmain .section01 .section02a .probox {
     width: 100%;
   }
-  .workmain .section01 .float {
+  .workmain .section01 .section02a .probox .hwbox {
+    width: 180px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 50px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .workmain .section01 .section02a .probox .hwbox h2 {
+    font-family: "the01";
+    font-size: 30px;
+  }
+  .workmain .section02 {
+    overflow: hidden;
+    height: 100vh;
+  }
+  .workmain .section02 article .titlepro {
+    position: relative;
+    top: 5rem;
+    left: 7rem;
+  }
+  .workmain .section02 article .titlepro H2 {
+    font-size: 40px;
+    font-family: "the01";
+  }
+  .workmain .section02 article .linkbox {
     position: relative;
   }
-  .workmain .section01 .float .secfloat01 {
+  .workmain .section02 article .linkbox a img {
+    width: 70%;
+  }
+  .workmain .section02 article .linkbox .weaderhover:hover .boxtex04 {
+    opacity: 1;
+  }
+  .workmain .section02 article .linkbox .weaderhover:hover .mainicon04 {
+    -webkit-animation: icon04 1.5s ease-in-out infinite;
+            animation: icon04 1.5s ease-in-out infinite;
+  }
+  @-webkit-keyframes icon04 {
+    0% {
+      transform: translateY(0%) rotate(22deg);
+    }
+    50% {
+      transform: translateY(30%) rotate(22deg);
+    }
+  }
+  @keyframes icon04 {
+    0% {
+      transform: translateY(0%) rotate(22deg);
+    }
+    50% {
+      transform: translateY(30%) rotate(22deg);
+    }
+  }
+  .workmain .section02 article .linkbox .weaderhover .mainicon04 {
     position: absolute;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.4745098039) 0%, rgba(0, 0, 0, 0.884) 100%);
-    left: -13.5rem;
-    top: -14.6rem;
-    -webkit-animation: sec01 3s infinite alternate ease-in-out;
-            animation: sec01 3s infinite alternate ease-in-out;
+    left: 4rem;
+    top: 9rem;
+    transform: rotate(22deg);
+    z-index: 1;
   }
-  @-webkit-keyframes sec01 {
+  .workmain .section02 article .linkbox .weaderhover .boxtex04 {
+    opacity: 0;
+    position: absolute;
+    transform: rotate(-6deg) translateY(-28rem);
+  }
+  .workmain .section02 article .linkbox .weaderhover .boxtex04 .text04 {
+    font-size: 250px;
+    font-weight: bold;
+    color: #DE98AA;
+    white-space: nowrap;
+    position: relative;
+    transform: translateX(-51%);
+    -webkit-animation: temove04 12s linear infinite;
+            animation: temove04 12s linear infinite;
+  }
+  @-webkit-keyframes temove04 {
     0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 0.5;
+      transform: translateX(-51%);
     }
     100% {
-      opacity: 1;
+      transform: translateX(0%);
     }
   }
-  @keyframes sec01 {
+  @keyframes temove04 {
     0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 0.5;
+      transform: translateX(-51%);
     }
     100% {
-      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+  .workmain .section02 article .linkbox .splahover:hover .boxtex03 {
+    opacity: 1;
+  }
+  .workmain .section02 article .linkbox .splahover:hover .mainicon03 {
+    -webkit-animation: icon03 1.5s ease-in-out infinite;
+            animation: icon03 1.5s ease-in-out infinite;
+  }
+  @-webkit-keyframes icon03 {
+    0% {
+      transform: translate(0%) rotate(-13deg);
+    }
+    50% {
+      transform: translate(30%, -10%) rotate(-13deg);
+    }
+  }
+  @keyframes icon03 {
+    0% {
+      transform: translate(0%) rotate(-13deg);
+    }
+    50% {
+      transform: translate(30%, -10%) rotate(-13deg);
+    }
+  }
+  .workmain .section02 article .linkbox .splahover .mainicon03 {
+    position: absolute;
+    right: -3.6rem;
+    top: 19rem;
+    transform: rotate(-13deg);
+    z-index: 1;
+  }
+  .workmain .section02 article .linkbox .splahover .boxtex03 {
+    opacity: 0;
+    position: absolute;
+    transform: rotate(-6deg) translateY(-6rem);
+  }
+  .workmain .section02 article .linkbox .splahover .boxtex03 .text03 {
+    font-size: 250px;
+    font-weight: bold;
+    color: #944343;
+    white-space: nowrap;
+    position: relative;
+    transform: translateX(-51%);
+    -webkit-animation: temove03 10s linear infinite;
+            animation: temove03 10s linear infinite;
+  }
+  @-webkit-keyframes temove03 {
+    0% {
+      transform: translateX(-51%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  @keyframes temove03 {
+    0% {
+      transform: translateX(-51%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  .workmain .section02 article .linkbox .manhover:hover .boxtex02 {
+    opacity: 1;
+  }
+  .workmain .section02 article .linkbox .manhover:hover .mainicon02 {
+    -webkit-animation: icon02 1.5s ease-in-out infinite;
+            animation: icon02 1.5s ease-in-out infinite;
+  }
+  @-webkit-keyframes icon02 {
+    0% {
+      transform: translate(0%) rotate(22deg);
+    }
+    50% {
+      transform: translate(10%, 30%) rotate(22deg);
+    }
+  }
+  @keyframes icon02 {
+    0% {
+      transform: translate(0%) rotate(22deg);
+    }
+    50% {
+      transform: translate(10%, 30%) rotate(22deg);
+    }
+  }
+  .workmain .section02 article .linkbox .manhover .mainicon02 {
+    position: absolute;
+    left: 2rem;
+    top: 29rem;
+    transform: rotate(22deg);
+    z-index: 1;
+  }
+  .workmain .section02 article .linkbox .manhover .boxtex02 {
+    opacity: 0;
+    position: absolute;
+    transform: rotate(-6deg) translateY(-3rem);
+  }
+  .workmain .section02 article .linkbox .manhover .boxtex02 .text02 {
+    font-size: 250px;
+    font-weight: bold;
+    color: #24743F;
+    white-space: nowrap;
+    position: relative;
+    transform: translateX(-51%);
+    -webkit-animation: temove02 12s linear infinite;
+            animation: temove02 12s linear infinite;
+  }
+  @-webkit-keyframes temove02 {
+    0% {
+      transform: translateX(-51%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  @keyframes temove02 {
+    0% {
+      transform: translateX(-51%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  .workmain .section02 article .linkbox .suehover:hover .boxtex01 {
+    opacity: 1;
+  }
+  .workmain .section02 article .linkbox .suehover:hover .mainicon01 {
+    -webkit-animation: icon01 1.5s ease-in-out infinite;
+            animation: icon01 1.5s ease-in-out infinite;
+  }
+  @-webkit-keyframes icon01 {
+    0% {
+      transform: translate(0%) rotate(-13deg);
+    }
+    50% {
+      transform: translate(30%, -10%) rotate(-13deg);
+    }
+  }
+  @keyframes icon01 {
+    0% {
+      transform: translate(0%) rotate(-13deg);
+    }
+    50% {
+      transform: translate(30%, -10%) rotate(-13deg);
+    }
+  }
+  .workmain .section02 article .linkbox .suehover .mainicon01 {
+    position: absolute;
+    right: 0rem;
+    top: 37rem;
+    transform: rotate(8deg);
+    z-index: 1;
+  }
+  .workmain .section02 article .linkbox .suehover .boxtex01 {
+    opacity: 0;
+    position: absolute;
+    transform: rotate(-6deg) translateY(13rem);
+  }
+  .workmain .section02 article .linkbox .suehover .boxtex01 .text01 {
+    font-size: 250px;
+    font-weight: bold;
+    color: #DCB244;
+    white-space: nowrap;
+    position: relative;
+    transform: translateX(-51%);
+    -webkit-animation: temove01 10s linear infinite;
+            animation: temove01 10s linear infinite;
+  }
+  @-webkit-keyframes temove01 {
+    0% {
+      transform: translateX(-51%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  @keyframes temove01 {
+    0% {
+      transform: translateX(-51%);
+    }
+    100% {
+      transform: translateX(0%);
     }
   }
 }/*# sourceMappingURL=Work.css.map */

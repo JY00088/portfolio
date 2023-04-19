@@ -37,7 +37,7 @@ const Head = () => {
           <span></span>
         </label>
         <div id="side_menu" className={showMenu ? 'active' : ''}>
-          <div className='list'>PROJECT LIST</div>
+          <div className="list">PROJECT LIST</div>
           <ul className="ulbox">
             <li>
               <Link
@@ -78,9 +78,9 @@ const Head = () => {
           </ul>
         </div>
       </div>
-      <div className="lobox">
+      <Link className="lobox" to="/">
         <Logo2 className="logow" />
-      </div>
+      </Link>
 
       <nav>
         <Link to="/">work</Link>
