@@ -16,7 +16,7 @@ const Sue = () => {
           </video>
 
           <article className="backslid04">
-            <h1>SPLATOON SPLATOON SPLATOON SPLATOON SPLATOON SPLATOON </h1>
+            <h1>SUNSET SUNSET SUNSET SUNSET SUNSET SUNSET SUNSET SUNSET</h1>
           </article>
 
           <article className="imove">
