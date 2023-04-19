@@ -1,20 +1,12 @@
 import React from 'react';
 import '../css/Work.scss';
 import { Link } from 'react-router-dom';
-import { ReactComponent as Logo } from '../css/imgs/logo_w_title.svg';
 
-// scroll 이벤트
-import Scro from './Scro';
 
-// swiper
-import { useState, useEffect, useRef } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import '../css/styles.css';
-// import required modules
-import { Navigation } from 'swiper';
 
 const Work = () => {
   return (

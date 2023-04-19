@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import '../css/Work.scss';
 import '../css/About.scss';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { ReactComponent as Logo2 } from '../css/imgs/logo_w_title.svg';
 
 const Head = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [animated, setAnimated] = useState(false);
-  const navigation = useNavigate();
+
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);

@@ -1,7 +1,7 @@
 import Work from './component/Work';
 import About from './component/About';
 import Head from './component/Head';
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import MAN from './component/MAN';
 import SPL from './component/SPL';
 import Wea from './component/Wea';

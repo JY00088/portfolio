@@ -1,6 +1,5 @@
 import React from 'react';
 import '../css/MAN.scss';
-import { Link } from 'react-router-dom';
 import { ReactComponent as Mal } from '../css/imgs/malpong01.svg';
 import { ReactComponent as Mae } from '../css/imgs/malpong02.svg';
 

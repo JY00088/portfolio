@@ -1,11 +1,7 @@
 import React, { useRef } from 'react';
 import '../css/About.scss';
-import { Link } from 'react-router-dom';
 import { ReactComponent as Logo2 } from '../css/imgs/logo_w_title.svg';
-import { ReactComponent as CC } from '../css/imgs/cont.svg';
 
-// scroll 이벤트
-import Ani from './Ani';
 
 const About = () => {
   const scrollRef = useRef(null);
