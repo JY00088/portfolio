@@ -3,15 +3,15 @@ header {
     height: 0;
 }
 
-.bodycolor {
-    background-color: #24743F;
+.bodycolor04 {
+    background-color: #DCB244;
     height: 100vh;
     overflow: hidden;
     z-index: 0;
     position: relative;
     cursor: url("../css/imgs/mini_b.svg"), auto;
 
-    .colorbak {
+    .colorbak04 {
         position: relative;
 
         .pone {
@@ -35,7 +35,7 @@ header {
 
         }
 
-        .backslid {
+        .backslid04 {
             position: absolute;
             transform: rotate(-6deg) translateY(-54rem);
             z-index: -1;
@@ -43,7 +43,7 @@ header {
             h1 {
                 font-size: 250px;
                 font-weight: bold;
-                color: #17502B;
+                color: #C09A37;
                 white-space: nowrap;
                 position: relative;
                 transform: translateX(-51%);
@@ -62,10 +62,11 @@ header {
         }
 
         .imove {
-            .maimg01 {
+            .maimg014 {
                 position: absolute;
                 left: 24rem;
                 top: 8rem;
+                transform: rotate(18deg);
             }
 
             .maimg02 {
@@ -87,10 +88,11 @@ header {
             z-index: 1;
 
             .ahrck {
-                width: 230px;
+                width: 267px;
+
                 height: 55px;
                 border-radius: 55px;
-                background-color: #2C9D54;
+                background-color: #F6C548;
                 position: absolute;
                 left: 61rem;
                 top: -41rem;
@@ -131,26 +133,44 @@ header {
                 position: absolute;
                 right: 30rem;
                 top: 8rem;
+
+                rect {
+                    fill: #F6C548;
+                }
+
+                path {
+                    fill: #F6C548;
+                }
+
             }
 
             .fel01 {
                 position: absolute;
-                right: 32rem;
-                top: 10rem;
+                right: 32.6rem;
+                top: 9.3rem;
                 font-size: 20px;
             }
 
             .Mae {
                 position: absolute;
                 right: 39rem;
-                top: 14rem;
+                top: 13rem;
                 width: 310px;
+
+                rect {
+                    fill: #F6C548;
+                }
+
+                path {
+                    fill: #F6C548;
+                }
             }
 
             .fel02 {
                 position: absolute;
-                right: 40rem;
-                top: 19rem;
+                line-height: 1.2;
+                right: 41rem;
+                top: 16.6rem;
                 width: 244px;
                 font-size: 20px;
             }
@@ -158,10 +178,10 @@ header {
             .Mam {
                 position: absolute;
                 right: 30rem;
-                top: 30rem;
+                top: 29rem;
                 width: 463px;
-                height: 170px;
-                background-color: #2C9D54;
+                height: 176px;
+                background-color: #F6C548;
                 border-radius: 25px;
                 text-align: center;
 

@@ -5,7 +5,6 @@ import { ReactComponent as Logo } from '../css/imgs/logo_w_title.svg';
 
 // scroll 이벤트
 import Scro from './Scro';
-import scrollbar from 'smooth-scrollbar';
 
 // swiper
 import { useState, useEffect, useRef } from 'react';
@@ -65,7 +64,7 @@ const Work = () => {
             </div>
             <div className="linkbox">
               <div className="weaderhover">
-                <Link className="mainicon04">
+                <Link className="mainicon04" to="/Wea">
                   <img src="../img/mainicon04.png" />
                 </Link>
                 <div className="boxtex04">
@@ -77,9 +76,9 @@ const Work = () => {
               </div>
 
               <div className="splahover">
-                <a className="mainicon03">
+                <Link className="mainicon03" to="/SPL">
                   <img src="../img/mainicon03.png" />
-                </a>
+                </Link>
                 <div className="boxtex03">
                   <p className="text03">
                     SPLATOON SPLATOON SPLATOON SPLATOON SPLATOON SPLATOON
@@ -100,9 +99,9 @@ const Work = () => {
               </div>
 
               <div className="suehover">
-                <a className="mainicon01">
+                <Link className="mainicon01" to="/Sue">
                   <img src="../img/mainicon01.png" />
-                </a>
+                </Link>
                 <div className="boxtex01">
                   <p className="text01">
                     SUNSET SUNSET SUNSET SUNSET SUNSET SUNSET SUNSET SUNSET

@@ -13,13 +13,13 @@ const Head = () => {
     setShowMenu(!showMenu);
   };
 
-  const handleLinkClick = () => {
+  const handleLinkClick = (com) => {
+    console.log(typeof com);
     setAnimated(true);
     setTimeout(() => {
       setAnimated(false);
     }, 1000);
     setShowMenu(false);
-    navigation('/MAN');
   };
 
   return (
@@ -37,42 +37,43 @@ const Head = () => {
           <span></span>
         </label>
         <div id="side_menu" className={showMenu ? 'active' : ''}>
+          <div className='list'>PROJECT LIST</div>
           <ul className="ulbox">
             <li>
               <Link
                 className={`man ${animated ? 'animated' : ''}`}
                 to="/MAN"
-                onClick={handleLinkClick}
+                onClick={() => handleLinkClick('/MAN')}
               >
                 MANGROVE
               </Link>
             </li>
             <li>
-              <a
+              <Link
                 className={`spl ${animated ? 'animated' : ''}`}
-                href="#"
-                onClick={handleLinkClick}
+                to="/SPL"
+                onClick={() => handleLinkClick('/SPL')}
               >
                 SPLATOON
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 className={`wea ${animated ? 'animated' : ''}`}
-                href="#"
-                onClick={handleLinkClick}
+                to="/Wea"
+                onClick={() => handleLinkClick('/Wea')}
               >
                 WEATHERLOOK
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 className={`sue ${animated ? 'animated' : ''}`}
-                href="#"
-                onClick={handleLinkClick}
+                to="/Sue"
+                onClick={() => handleLinkClick('/Sue')}
               >
                 SUNSET
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

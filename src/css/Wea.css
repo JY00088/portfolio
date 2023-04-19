@@ -3,27 +3,27 @@ header {
   height: 0;
 }
 
-.bodycolor {
-  background-color: #24743F;
+.bodycolor03 {
+  background-color: #EDB1C0;
   height: 100vh;
   overflow: hidden;
   z-index: 0;
   position: relative;
   cursor: url("../css/imgs/mini_b.svg"), auto;
 }
-.bodycolor .colorbak {
+.bodycolor03 .colorbak03 {
   position: relative;
 }
-.bodycolor .colorbak .pone {
+.bodycolor03 .colorbak03 .pone {
   margin-top: 130px;
   z-index: 2;
   position: relative;
   left: 35rem;
 }
-.bodycolor .colorbak .pone img {
+.bodycolor03 .colorbak03 .pone img {
   width: 390px;
 }
-.bodycolor .colorbak video {
+.bodycolor03 .colorbak03 video {
   position: absolute;
   z-index: 2;
   left: 621px;
@@ -31,15 +31,15 @@ header {
   border-radius: 31px;
   width: 270px;
 }
-.bodycolor .colorbak .backslid {
+.bodycolor03 .colorbak03 .backslid03 {
   position: absolute;
   transform: rotate(-6deg) translateY(-54rem);
   z-index: -1;
 }
-.bodycolor .colorbak .backslid h1 {
+.bodycolor03 .colorbak03 .backslid03 h1 {
   font-size: 250px;
   font-weight: bold;
-  color: #17502B;
+  color: #DE98AA;
   white-space: nowrap;
   position: relative;
   transform: translateX(-51%);
@@ -62,36 +62,37 @@ header {
     transform: translateX(0%);
   }
 }
-.bodycolor .colorbak .imove .maimg01 {
+.bodycolor03 .colorbak03 .imove .maimg013 {
   position: absolute;
   left: 24rem;
   top: 8rem;
+  transform: rotate(18deg);
 }
-.bodycolor .colorbak .imove .maimg02 {
+.bodycolor03 .colorbak03 .imove .maimg02 {
   position: absolute;
   right: 80rem;
   top: 32rem;
 }
-.bodycolor .colorbak .imove .maimg03 {
+.bodycolor03 .colorbak03 .imove .maimg03 {
   position: absolute;
   right: 27rem;
   top: 16rem;
   transform: rotate(27deg);
 }
-.bodycolor .colorbak .mantext {
+.bodycolor03 .colorbak03 .mantext {
   position: relative;
   z-index: 1;
 }
-.bodycolor .colorbak .mantext .ahrck {
+.bodycolor03 .colorbak03 .mantext .ahrck {
   width: 230px;
   height: 55px;
   border-radius: 55px;
-  background-color: #2C9D54;
+  background-color: #F7BBCE;
   position: absolute;
   left: 61rem;
   top: -41rem;
 }
-.bodycolor .colorbak .mantext .ahrck .grenbox {
+.bodycolor03 .colorbak03 .mantext .ahrck .grenbox {
   background-color: black;
   width: 45px;
   height: 45px;
@@ -100,7 +101,7 @@ header {
   left: 6px;
   top: 4px;
 }
-.bodycolor .colorbak .mantext .ahrck .tntwk01 {
+.bodycolor03 .colorbak03 .mantext .ahrck .tntwk01 {
   color: white;
   font-size: 21px;
   font-weight: 600;
@@ -108,56 +109,69 @@ header {
   left: 16px;
   top: 16px;
 }
-.bodycolor .colorbak .mantext .ahrck .rmfwk01 {
+.bodycolor03 .colorbak03 .mantext .ahrck .rmfwk01 {
   font-size: 21px;
   font-weight: 600;
   position: absolute;
   left: 59px;
   top: 16px;
 }
-.bodycolor .colorbak .svgimgbox {
+.bodycolor03 .colorbak03 .svgimgbox {
   font-weight: 600;
 }
-.bodycolor .colorbak .svgimgbox .Mal {
+.bodycolor03 .colorbak03 .svgimgbox .Mal {
   position: absolute;
   right: 30rem;
   top: 8rem;
 }
-.bodycolor .colorbak .svgimgbox .fel01 {
+.bodycolor03 .colorbak03 .svgimgbox .Mal rect {
+  fill: #F7BBCE;
+}
+.bodycolor03 .colorbak03 .svgimgbox .Mal path {
+  fill: #F7BBCE;
+}
+.bodycolor03 .colorbak03 .svgimgbox .fel01 {
   position: absolute;
-  right: 32rem;
+  right: 31rem;
   top: 10rem;
   font-size: 20px;
 }
-.bodycolor .colorbak .svgimgbox .Mae {
+.bodycolor03 .colorbak03 .svgimgbox .Mae {
   position: absolute;
   right: 39rem;
-  top: 14rem;
+  top: 13rem;
   width: 310px;
 }
-.bodycolor .colorbak .svgimgbox .fel02 {
+.bodycolor03 .colorbak03 .svgimgbox .Mae rect {
+  fill: #F7BBCE;
+}
+.bodycolor03 .colorbak03 .svgimgbox .Mae path {
+  fill: #F7BBCE;
+}
+.bodycolor03 .colorbak03 .svgimgbox .fel02 {
   position: absolute;
-  right: 40rem;
-  top: 19rem;
+  line-height: 1.2;
+  right: 41rem;
+  top: 16.6rem;
   width: 244px;
   font-size: 20px;
 }
-.bodycolor .colorbak .svgimgbox .Mam {
+.bodycolor03 .colorbak03 .svgimgbox .Mam {
   position: absolute;
   right: 30rem;
-  top: 30rem;
+  top: 29rem;
   width: 463px;
-  height: 170px;
-  background-color: #2C9D54;
+  height: 194px;
+  background-color: #F7BBCE;
   border-radius: 25px;
   text-align: center;
 }
-.bodycolor .colorbak .svgimgbox .Mam .fel03 {
+.bodycolor03 .colorbak03 .svgimgbox .Mam .fel03 {
   font-size: 20px;
   padding: 20px;
   line-height: 1.6;
 }
-.bodycolor .colorbak .view {
+.bodycolor03 .colorbak03 .view {
   position: absolute;
   top: 42rem;
   right: 30rem;
@@ -183,4 +197,4 @@ header {
   from {
     transform: translateX(-20%);
   }
-}/*# sourceMappingURL=MAN.css.map */
+}/*# sourceMappingURL=Wea.css.map */
