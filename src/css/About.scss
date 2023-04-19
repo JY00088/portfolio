@@ -25,6 +25,8 @@ body {
 .aboutheader {
     padding: 5px 0;
     height: 75px;
+    z-index: 1;
+    position: fixed;
 
     .toglebox {
         #check_box {
@@ -137,9 +139,9 @@ body {
             left: 0;
         }
 
-        /* #check_box:checked+label+#side_menu {
+        #check_box:checked+label+#side_menu {
             left: 0;
-        } */
+        }
 
     }
 
@@ -192,6 +194,7 @@ body {
     color: white;
 
     .section11 {
+        margin-top: 75px;
         height: 90vh;
         display: flex;
         align-items: center;
@@ -553,54 +556,100 @@ body {
     .section12 {
         height: 100vh;
         position: relative;
+        overflow-y: hidden;
 
-        .horizontal-scroll-wrapper {
+        .lefttext {}
+
+        .oneblue {
             position: absolute;
-            display: block;
-            top: 2rem;
-            left: -30rem;
-            width: 45vw;
-            height: 2000px;
-            /* max-height: 500px; */
-            margin: 0;
-            background: #abc;
-            overflow-y: auto;
-            overflow-x: hidden;
-            transform: rotate(-90deg) translateY(-80px);
-            transform-origin: right top;
+            left: 20rem;
+            top: 6rem;
+
+            img {
+                width: 400px;
+            }
         }
 
-        .horizontal-scroll-wrapper>div {
-            display: block;
-            padding: 5px;
-            background: #cab;
-            transform: rotate(90deg);
-            transform-origin: right top;
+        .horizontal-container {
+            position: absolute;
+            top: 1rem;
+            left: 50rem;
+
+            width: 100%;
+            overflow-x: auto;
+            overflow-y: hidden;
+
+            .horizontal-content {
+                display: flex;
+                flex-wrap: nowrap;
+                padding: 10px;
+
+                div {
+                    flex-shrink: 0;
+                    width: 500px;
+                    height: 500px;
+                    color: black;
+                    font-size: 70px;
+                    font-family: 'the02';
+                    background-color: #f2f2f2;
+                    border: 1px solid #ddd;
+                    border-radius: 4px;
+                    margin-right: 10px;
+                }
+            }
         }
 
-        .squares {
-            padding: 60px 0 0 0;
+        .horizontal-container::-webkit-scrollbar {
+            display: none;
         }
 
-        .squares>div {
-            width: 60px;
-            height: 60px;
-            margin: 10px;
-        }
+        // .horizontal-scroll-wrapper {
+        //     position: absolute;
+        //     display: block;
+        //     top: 2rem;
+        //     left: -30rem;
+        //     width: 45vw;
+        //     height: 2000px;
+        //     /* max-height: 500px; */
+        //     margin: 0;
+        //     background: #abc;
+        //     overflow-y: auto;
+        //     overflow-x: hidden;
+        //     transform: rotate(-90deg) translateY(-80px);
+        //     transform-origin: right top;
+        // }
 
-        .rectangles {
-            padding: 100px 0 0 0;
-        }
+        // .horizontal-scroll-wrapper>div {
+        //     display: block;
+        //     padding: 5px;
+        //     background: #cab;
+        //     transform: rotate(90deg);
+        //     transform-origin: right top;
+        // }
 
-        .rectangles>div {
-            width: 140px;
-            height: 60px;
-            margin: 50px 10px;
-            padding: 5px;
-            background: #cab;
-            transform: rotate(90deg) translateY(80px);
-            transform-origin: right top;
-        }
+        // .squares {
+        //     padding: 60px 0 0 0;
+        // }
+
+        // .squares>div {
+        //     width: 60px;
+        //     height: 60px;
+        //     margin: 10px;
+        // }
+
+        // .rectangles {
+        //     padding: 100px 0 0 0;
+        // }
+
+        // .rectangles>div {
+        //     width: 140px;
+        //     height: 60px;
+        //     margin: 50px 10px;
+        //     padding: 5px;
+        //     background: #cab;
+        //     transform: rotate(90deg) translateY(80px);
+        //     transform-origin: right top;
+        // }
 
     }
 

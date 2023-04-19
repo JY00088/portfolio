@@ -1,13 +1,26 @@
 import React, { useState } from 'react';
 import '../css/Work.scss';
 import '../css/About.scss';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { ReactComponent as Logo2 } from '../css/imgs/logo_w_title.svg';
 
 const Head = () => {
-  const [t, setT] = useState(false);
-  console.log(t);
-  const test = () => {};
+  const [showMenu, setShowMenu] = useState(false);
+  const [animated, setAnimated] = useState(false);
+  const navigation = useNavigate();
+
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
+
+  const handleLinkClick = () => {
+    setAnimated(true);
+    setTimeout(() => {
+      setAnimated(false);
+    }, 1000);
+    setShowMenu(false);
+    navigation('/MAN');
+  };
 
   return (
     <header className="aboutheader">
@@ -15,34 +28,49 @@ const Head = () => {
         <input
           type="checkbox"
           id="check_box"
-          onClick={() => {
-            setT(!t);
-          }}
+          onClick={toggleMenu}
+          checked={showMenu}
         />
-        <label for="check_box">
+        <label htmlFor="check_box">
           <span></span>
           <span></span>
           <span></span>
         </label>
-        <div id="side_menu" className={t ? 'active' : ''}>
+        <div id="side_menu" className={showMenu ? 'active' : ''}>
           <ul className="ulbox">
             <li>
-              <Link className="man" to="/Pro">
+              <Link
+                className={`man ${animated ? 'animated' : ''}`}
+                to="/MAN"
+                onClick={handleLinkClick}
+              >
                 MANGROVE
               </Link>
             </li>
             <li>
-              <a className="spl" href="#">
+              <a
+                className={`spl ${animated ? 'animated' : ''}`}
+                href="#"
+                onClick={handleLinkClick}
+              >
                 SPLATOON
               </a>
             </li>
             <li>
-              <a className="wea" href="#">
+              <a
+                className={`wea ${animated ? 'animated' : ''}`}
+                href="#"
+                onClick={handleLinkClick}
+              >
                 WEATHERLOOK
               </a>
             </li>
             <li>
-              <a className="sue" href="#">
+              <a
+                className={`sue ${animated ? 'animated' : ''}`}
+                href="#"
+                onClick={handleLinkClick}
+              >
                 SUNSET
               </a>
             </li>
@@ -55,7 +83,11 @@ const Head = () => {
 
       <nav>
         <Link to="/">work</Link>
-        <Link onClick={() => window.open('../이지영_이력서.pdf', '_blank')}>
+        <Link
+          onClick={() => {
+            window.open('../이지영_이력서.pdf', '_blank');
+          }}
+        >
           reume
         </Link>
         <Link to="/about">about</Link>

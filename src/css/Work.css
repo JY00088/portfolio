@@ -7,6 +7,11 @@ body {
   background-color: black;
 }
 
+.page-transition {
+  transition: transform 1s ease-in-out;
+  transform: translateX(-100%);
+}
+
 .bodywork {
   cursor: url("../css/imgs/mini_w.svg"), auto;
   background-color: black;
@@ -15,6 +20,8 @@ body {
 .workmain {
   background-color: rgba(0, 0, 0, 0.842);
   color: white;
+  z-index: 0;
+  position: relative;
 }
 .workmain .section01 {
   overflow: hidden;
@@ -26,7 +33,7 @@ body {
 .workmain .section01 .section01a {
   width: 100%;
   margin: 0 30px;
-  margin-top: 30px;
+  margin-top: 75px;
   height: 35%;
   z-index: 1;
 }
@@ -230,7 +237,7 @@ body {
   left: 41rem;
   top: 9rem;
   transform: rotate(22deg);
-  z-index: 5;
+  z-index: 1;
 }
 .workmain .section02 article .linkbox .weaderhover .boxtex04 {
   opacity: 0;
@@ -288,10 +295,10 @@ body {
 }
 .workmain .section02 article .linkbox .splahover .mainicon03 {
   position: absolute;
-  right: 44rem;
-  top: 20rem;
+  right: 42rem;
+  top: 17rem;
   transform: rotate(-13deg);
-  z-index: 4;
+  z-index: 1;
 }
 .workmain .section02 article .linkbox .splahover .boxtex03 {
   opacity: 0;
@@ -352,7 +359,7 @@ body {
   left: 39rem;
   top: 33rem;
   transform: rotate(22deg);
-  z-index: 3;
+  z-index: 1;
 }
 .workmain .section02 article .linkbox .manhover .boxtex02 {
   opacity: 0;
@@ -413,7 +420,7 @@ body {
   right: 44rem;
   top: 32rem;
   transform: rotate(8deg);
-  z-index: 4;
+  z-index: 1;
 }
 .workmain .section02 article .linkbox .suehover .boxtex01 {
   opacity: 0;

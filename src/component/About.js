@@ -1,12 +1,25 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import '../css/About.scss';
 import { Link } from 'react-router-dom';
 import { ReactComponent as Logo2 } from '../css/imgs/logo_w_title.svg';
+import { ReactComponent as CC } from '../css/imgs/cont.svg';
 
 // scroll 이벤트
 import Ani from './Ani';
 
 const About = () => {
+  const scrollRef = useRef(null);
+
+  const handleWheel = (event) => {
+    const delta = Math.max(-1, Math.min(1, event.deltaY));
+    const scrollRefCurrent = scrollRef.current;
+
+    // 가로 스크롤의 너비 만큼 스크롤 속도 조절
+    scrollRefCurrent.scrollLeft -= delta * 150;
+    event.preventDefault();
+    event.stopPropagation();
+  };
+
   return (
     <div className="bodyabout">
       <main className="aboutmain">
@@ -74,26 +87,33 @@ const About = () => {
         {/* 두번째 단락 */}
         <article className="section12">
           <div className="lefttext">
-            <h2>Certification</h2>
-            <img />
-            <h4>National & National technical Qualification </h4>
+            {/*  <h2>Certification</h2> */}
+            <CC />
+            {/* <h4>National & National technical Qualification </h4> */}
           </div>
           <div className="oneblue">
+            <img src="../img/text.png" />
             <h2></h2>
             <div>
               <h3></h3>
               <img />
             </div>
           </div>
-          <div class="horizontal-scroll-wrapper  rectangles">
-            <div>item 1</div>
-            <div>item 2</div>
-            <div>item 3</div>
-            <div>item 4</div>
-            <div>item 5</div>
-            <div>item 6</div>
-            <div>item 7</div>
-            <div>item 8</div>
+
+          <div
+            className="horizontal-container"
+            ref={scrollRef}
+            onWheel={handleWheel}
+          >
+            <div className="horizontal-content">
+              <div>GTQ1급</div>
+              <div>GTQi 1급</div>
+              <div>GTQid 1급</div>
+              <div>시각디자인산업기사</div>
+              <div>그래픽마스터</div>
+              <div>컴퓨터그래픽스운용기능사</div>
+              <div>운전면허증 2종 보통</div>
+            </div>
           </div>
         </article>
         {/* 세번째 단락 */}

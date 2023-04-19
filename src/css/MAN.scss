@@ -1,0 +1,195 @@
+header {
+    padding: 0;
+    height: 0;
+}
+
+.bodycolor {
+    background-color: #24743F;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+    position: relative;
+
+    .colorbak {
+        position: relative;
+
+        .pone {
+            margin-top: 130px;
+            z-index: 1;
+            position: relative;
+            left: 35rem;
+
+            img {
+                width: 390px;
+            }
+        }
+
+        video {
+            position: absolute;
+            z-index: 1;
+            left: 621px;
+            top: 3.1rem;
+            border-radius: 31px;
+            width: 270px;
+
+        }
+
+        .backslid {
+            position: absolute;
+            transform: rotate(-6deg) translateY(-54rem);
+
+            h1 {
+                font-size: 250px;
+                font-weight: bold;
+                color: #17502B;
+                white-space: nowrap;
+                position: relative;
+                transform: translateX(-51%);
+                animation: move 5s linear infinite;
+
+                @keyframes move {
+                    0% {
+                        transform: translateX(-51%);
+                    }
+
+                    100% {
+                        transform: translateX(0%);
+                    }
+                }
+            }
+        }
+
+        .imove {
+            .maimg01 {
+                position: absolute;
+                left: 24rem;
+                top: 8rem;
+            }
+
+            .maimg02 {
+                position: absolute;
+                right: 80rem;
+                top: 32rem;
+            }
+
+            .maimg03 {
+                position: absolute;
+                right: 27rem;
+                top: 16rem;
+                transform: rotate(27deg);
+            }
+        }
+
+        .mantext {
+            position: relative;
+            z-index: 1;
+
+            .ahrck {
+                width: 230px;
+                height: 55px;
+                border-radius: 55px;
+                background-color: #2C9D54;
+                position: absolute;
+                left: 61rem;
+                top: -41rem;
+
+                .grenbox {
+                    background-color: black;
+                    width: 45px;
+                    height: 45px;
+                    border-radius: 50%;
+                    position: absolute;
+                    left: 6px;
+                    top: 4px;
+                }
+
+                .tntwk01 {
+                    color: white;
+                    font-size: 21px;
+                    font-weight: 600;
+                    position: absolute;
+                    left: 16px;
+                    top: 16px;
+                }
+
+                .rmfwk01 {
+                    color: white;
+                    font-size: 21px;
+                    font-weight: 600;
+                    position: absolute;
+                    left: 59px;
+                    top: 16px;
+                }
+            }
+        }
+
+        .svgimgbox {
+            .Mal {
+                position: absolute;
+                right: 30rem;
+                top: 8rem;
+            }
+
+            .fel01 {
+                position: absolute;
+                right: 32rem;
+                top: 10rem;
+                font-size: 20px;
+                font-weight: 600;
+            }
+
+            .Mae {
+                position: absolute;
+                right: 39rem;
+                top: 14rem;
+                width: 310px;
+            }
+
+            .fel02 {
+                position: absolute;
+                right: 40rem;
+                top: 19rem;
+                width: 244px;
+                font-size: 20px;
+                font-weight: 600;
+            }
+
+            .Mam {
+                position: absolute;
+                right: 30rem;
+                top: 30rem;
+                width: 463px;
+                height: 170px;
+                background-color: #2C9D54;
+                border-radius: 25px;
+
+                .fel03 {
+                    font-size: 20px;
+                    font-weight: 600;
+                    padding: 20px;
+                    line-height: 1.6;
+                }
+            }
+        }
+
+        .view {
+            position: absolute;
+            top: 42rem;
+            right: 30rem;
+            font-size: 25px;
+            font-weight: 500;
+            animation: moves 1s ease-in-out infinite alternate;
+
+            @keyframes moves {
+                to {
+                    transform: translateX(0);
+                }
+
+                from {
+                    transform: translateX(-20%);
+                }
+
+            }
+        }
+    }
+}
